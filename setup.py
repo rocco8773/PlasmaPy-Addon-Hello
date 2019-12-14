@@ -23,9 +23,10 @@ ex_extras = dict(filter(lambda i: i[0] not in exclude_keys, extras.items()))
 # Concatenate all the values together for 'all'
 extras['all'] = list(chain.from_iterable(ex_extras.values()))
 
-extras['entry_points'] = {'plasmapy.addons': '.hello = plasmapy.addons.hello'}
+#extras['entry_points'] = {'plasmapy.addons': '.hello = plasmapy.addons.hello'}
 
 # Get configuration information from all of the various subpackages.
 # See the docstring for setup_helpers.update_package_files for more
 # details.
-setup(extras_require=extras, use_scm_version=True)
+setup(extras_require=extras, use_scm_version=True,
+      entry_points={'plasmapy.addons': '.hello = plasmapy.addons.hello'})
