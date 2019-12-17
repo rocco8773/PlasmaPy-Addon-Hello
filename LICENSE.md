@@ -1,4 +1,4 @@
-# PlasmaPy-AddonHello License
+# PlasmaPy-Addon-Hello License
 
 Copyright (c) 2015-2019, PlasmaPy Developers.
 
